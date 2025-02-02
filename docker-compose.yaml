@@ -1,0 +1,10 @@
+services:
+  chat-app:
+    container_name: "chat-app"
+    image: postgres:17-alpine3.20
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: chat
+      POSTGRES_USER: chat
+      POSTGRES_DB: chatApp
